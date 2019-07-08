@@ -1,8 +1,140 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<h1>Kasparas 2n2kas</h1>
-</body>
+    <html lang="ltu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-latest.js"></script>
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="app">
+            <header>
+                 <nav class="navbar navbar-expand-lg navbar-dark bg-company-red">
+                    <div class="container">
+                        <a class="navbar-brand" href="{{ url('/') }}"><img src="https://i.imgur.com/yADPJNV.png" style="height: 25px;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/') }}">Pradžia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/bendruomene') }}">Bendruomenė</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/naujienos') }}">Naujienos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/privatumo') }}">Privatumo politika</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/susisiekite') }}">Susisiekite su mumis</a>
+                                </li>
+                            </ul>
+
+                            <!-- Right Side Of Navbar -->
+                            <ul class="navbar-nav ml-auto">
+                                <!-- Authentication Links -->
+                                @guest
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Prisijungimas') }}</a>
+                                    </li>
+                                    @if (Route::has('register'))
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registracija') }}</a>
+                                        </li>
+                                    @endif
+                                    @else
+                                        <li class="nav-item dropdown">
+                                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                            {{ Auth::user()->name }} <span class="caret"></span>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                                </a>
+
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                @csrf
+                                                </form>
+                                            </div>
+                                        </li>
+                                @endguest
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                @yield('content')
+            </main>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>Kontaktai</h5>
+                            <p class="kontaktaih"> El. paštas: <a href="mailto:transadris@gmail.com" class="kontaktai">transadris@gmail.com</a></p>
+                            <p class="kontaktaih"> Tel. nr.: <a href="tel:+37063444100" class="kontaktai">+37063444100</a></p>
+                            <p class="kontaktaih"> Facebook: <a href="https://www.facebook.com/gabriele.kvietinskaite" target="_blank" class="kontaktai"> <i class="fab fa-facebook-square"></i></a></p>
+                            <p class="kontaktaih"> Instagram: <a href="https://www.instagram.com/gabrielleyz" target="_blank" class="kontaktai"><i class="fab fa-instagram"></i></a></p>
+                        </div>
+                        <div class="col-sm">
+                            <h5>UAB „Transadris“</h5>
+                            <p class="kontaktaih"> Įmonės kodas: <span class="kontaktai"> 304632267</span></p>
+                            <p class="kontaktaih"> PVM mokėtojo kodas: <span class="kontaktai"> LT100011189617</span></p>
+                            <p class="kontaktaih"> Adresas: <span class="kontaktai">Basanavičiaus g. 25, Marijampolė,</span></p>
+                            <p class="kontaktai" style="padding-left:63px"> Lietuva, LT-68270</p>
+                    
+                        </div>
+                        <div class="col-sm">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="350" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=basanavi%C4%8Diaus%20g%2025%20marijampol%C4%97&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="f2">
+                <div class="container">
+                    <span class="kontaktaih">© Transadris 2019. Visos teisės saugomos.</span>
+                </div>
+            </div>  
+        </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script src="./js/instafeed.min.js"></script>
+            <script src="./js/custom.js"></script>
+            <script src="./js/jquery.counterup.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ )
+    {
+      $('.counter').counterUp({
+      delay: 10,
+      time: 4000
+      });
+    });
+  </script>
+    </body>
 </html>
