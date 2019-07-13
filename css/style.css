@@ -1,0 +1,280 @@
+.sidenav {
+	display: none;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.highlight{
+	color: #818181;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50pt;
+  color: white;
+}
+
+  .foto {
+    position: relative;
+    color: #ffffff;
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url("https://i.imgur.com/bwwL0YL.png");
+
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: white;
+ } 
+ 
+ .section {
+  color: white;
+ } 
+
+ .col-sm h3{
+  padding-top: 5px;
+  margin-bottom: 25px;
+ }
+
+ .btn {
+  margin-top: 25px;
+  margin-bottom: 20px;
+ }
+
+ h1 {
+ 	color: #e6e6e6;
+  padding-top: 40px;
+ }
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+    text-align: center;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.container {
+	text-align: center;
+}
+
+hr {
+	background-color: #818181;
+	height: 2px;
+	width: 6%;
+  margin-bottom: 30px;
+}
+
+footer{
+text-align: center;
+background-image: url("https://i.imgur.com/bwwL0YL.png");
+margin-top: 15px;
+}
+
+
+.social {
+	height: 50px;
+	padding-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#educ {
+	font-weight:normal;
+}
+
+.collapsible {
+  background-color: #0d0d0d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15pt;
+}
+
+.active, .collapsible:hover {
+  background-color: #1a1a1a;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #262626;
+}
+
+li {
+	text-align: left;
+	color: #b3b3b3;
+}
+
+
+
+
+.bac > .abc {
+  padding: 0 8px;
+}
+
+.bac:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.abc {
+  float: left;
+  width: 20%;
+}
+
+/* The popupModal (background) */
+.popupmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* popupModal Content */
+.popupmodal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The popupClose Button */
+.popupclose {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.popupclose:hover,
+.popupclose:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.popupcursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.popupcaption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}

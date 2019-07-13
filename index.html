@@ -1,7 +1,331 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
-</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<header>
+	<div class="sidenav">
+	  	<p><a href="#about">ABOUT</a></p>
+	  	<p><a href="#skills">SKILLS</a></p>
+	  	<p><a href="#education">EDUCATION</a></p>
+	  	<p><a href="#projects">PROJECTS</a></p>
+	  	<p><a href="#contact">CONTACT</a></p>
+	</div>
+</header>
+
+<body style="background-color:black;">
+	<div class="foto"></div>
+	<div class="centered">
+		hello, I'm <span class="highlight">gabrielė kvietinskaitė</span>
+		<div style="font-size: 25px; text-align: center;">IT student</div>
+		<div class="bounce">
+  			<a " href="#about"><img src="http://www.richardpinkstone.com/wp-content/uploads/2018/08/down-arrow.png" style="height: 50px"></a>
+		</div>
+	</div>
+	
+	
+
+	<div class="container">
+		<div class="section" id="about">
+	    	<h1>ABOUT</h1>
+	    	<hr>
+	    	
+			<img src="https://i.imgur.com/uiH3Mg3.png" style="height: 400px; margin-bottom: 10px;">
+			
+	    	<p>I'm upcoming third year IT student at Vilnius University who is seeking to find the opportunity to start career</p>
+	  	</div>
+	  	
+	  	
+
+	  	<div class="section" id="skills">
+	  		<h1>SKILLS</h1>
+	  		<hr>
+	  		
+	  		<div class="row">
+	  			<div class="col-sm">
+	  				<button class="collapsible">SOFTWARE <span style="float: right;">+</span></button>
+					<div class="content">
+  						<ul>
+  							<li>Java</li>
+  							<li>Python <ul>
+  								<li>Flask</li>
+  								<li>SQLALchemy</li>
+  								<li>Unit testing</li>
+  							</ul></li>
+  							<li>C</li>
+  							<li>HTML/CSS</li>
+  							<li>Laravel</li>
+  							<li>PostgreSQL</li>
+  							<li>Shell</li>
+  						</ul>
+					</div>
+	  			</div>
+	  			<div class="col-sm">
+	  				<button class="collapsible">TOOLS <span style="float: right;">+</span></button>
+					<div class="content">
+  						<ul>
+  							<li>NetBeans</li>
+  							<li>PyCharm</li>
+  							<li>CodeBlocks</li>
+  							<li>Sublime Text</li>
+  							<li>OpenNebula</li>
+  							<li>Android Studio</li>
+  							<li>GitLab</li>
+  							<li>MS Excel</li>
+  							<li>MS Word</li>
+  							<li>MS PowerPoint</li>
+  						</ul>
+					</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	
+	  	
+
+	  	<div class="section" id="education">
+	  		<h1>EDUCATION</h1>
+	  		<hr>
+	  		
+	  		<div class="row">
+				<div class="col-sm">
+					<img style="height: 50px;" src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/graduation-cap-icon-18-256.png">
+					<h3>Bachelor of Computer Science</h3>
+					<h5 id="educ">September 2017 - Present</h5>
+					<h5 id="educ">Vilnius University</h5>
+				</div>	  			
+				<div class="col-sm">
+					<img style="height: 50px;" src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/graduation-cap-icon-18-256.png">
+					<h3>High School</h3>
+					<h5 id="educ">September 2013 - June 2017</h5>
+					<h5 id="educ">Marijampolė Rygiškių Jonas Gymnasium</h5>
+				</div>
+	  		</div>
+	  	</div>
+	  	
+	  	
+
+	  	<div class="section" id="projects">
+	  		<h1>PROJECTS</h1>
+	  		<hr>
+	  		
+	  		<div class="project">
+	  			<div class="row">
+	  				<div class="col-sm">
+		  				<h3>PORTFOLIO</h3>
+		  				
+		  				<img src="images/portfolio.png" style="height: 200px;"><br>
+		  				<a class="btn btn-outline-light" href="https://github.com/GabrieleKvietinskaite/GabrieleKvietinskaite.github.io" target="_blank" role="button">SOURCE CODE</a>
+		  				
+		  				<p>At the beginning of July this year, a website was launched to showcase my projects to future employers. It's just the beginning and the page will be improved in the future.</p>
+				    	
+			    	</div>
+
+			    	<div class="col-sm">
+				    	<h3>WEB PAGE</h3>
+				    	
+				    	<img src="images/webpage.png" style="height: 200px;"><br>
+				    	<a class="btn btn-outline-light" href"" onclick="openpopupModal();currentSlide(1)" role="button">GALLERY</a>
+		  				
+		  				<p>University project. 100% implementation of the requirements such as register/login, connection to the database, several CRUD objects, usage of API, etc.. Created using PHP framework Laravel.</p>
+				    	
+		    		</div>
+
+				    <div class="col-sm">
+				    	<h3>EVENTS SYSTEM</h3>
+				    	
+				    	<img src="images/eventssystem.png" style="height: 200px;"><br>
+						<a class="btn btn-outline-light" href="https://github.com/GabrieleKvietinskaite/Events-System" target="_blank" style="margin-left: 10px;" role="button">SOURCE CODE</a>
+		  				
+		  				<p>University project. System of organizers and events organized by them. In the system people can register for various events and rank them later. The system has its own clock. Programmed using Java programming language.</p>
+		  				
+				    </div>
+	  			</div>
+
+	  			<div class="row">
+	  				<div class="col-sm">
+				    	<h3>WEB SCRAPER</h3>
+				    	
+				    	<img src="images/webscraper.png" style="height: 200px;"><br>
+				    	<a class="btn btn-outline-light" href="https://github.com/GabrieleKvietinskaite/Web-Scraper" target="_blank" role="button">SOURCE CODE</a>
+		  				
+		  				<p>University project. Web scraping is data scraping used for extracting data from websites. Programmed using Python, there is also a multithread version that allows multiple threads to run simultaneously.</p>
+				    	
+			    	</div>
+
+				    <div class="col-sm">
+	    		  		<h3>WEB APPLICATION</h3>
+	    		  		
+	    		  		<img src="images/webapplication.png" style="height: 200px;"><br>
+						<a class="btn btn-outline-light" href="https://github.com/GabrieleKvietinskaite/Flask-Web-Application" style="margin-left: 10px;" target="_blank" role="button">SOURCE CODE</a>
+		  				
+		  				<p>University project. Web application created using Python framework Flask. The application is for managing (CRUD) data that we took with a web scraper and put it into a database.</p>
+				    	
+				    </div>
+
+			    	<div class="col-sm">
+			    		<h3>PROJECT</h3>
+	    		  		
+	    		  		<img src="images/project.png" style="height: 200px;"><br>
+				    	<a class="btn btn-outline-light" disabled role="button">SOURCE CODE</a>   
+		  				
+		  				<p>More info will be announced soon!</p>
+				    	
+			    	</div>
+	  			</div>
+			  	
+	  			
+	  		</div>
+
+	  		<div class="section" id="contact">
+		  		<h1>CONTACT</h1>
+		  		<hr>
+		  		<h3>Email</h3><a href="mailto:gab.kvietinskaite@gmail.com" class="kontaktai">gab.kvietinskaite@gmail.com</a>
+		  		<h3 style="margin-top: 10px;">Phone</h3><a href="tel:+37063444100" class="kontaktai">+37069158457</a>
+		  	</div>
+		</div>
+	</div>
+
+
+	<div id="mypopupModal" class="popupmodal">
+ 		<span class="popupclose popupcursor" onclick="popupclosepopupModal()">&times;</span>
+  		<div class="popupmodal-content">
+		    <div class="mySlides">
+		      	<div class="numbertext">1 / 5</div>
+		      	<img src="images/main.png" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      	<div class="numbertext">2 / 5</div>
+		      	<img src="images/news.png" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      	<div class="numbertext">3 / 5</div>
+		      	<img src="images/message.png" style="width:100%">
+		    </div>
+		    
+		    <div class="mySlides">
+		      	<div class="numbertext">4 / 5</div>
+		      	<img src="images/messageregistered.png" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      	<div class="numbertext">5 / 5</div>
+		      	<img src="images/adminpanel.png" style="width:100%">
+		    </div>
+		    
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="popupcaption-container">
+		      	<p id="popupcaption"></p>
+		    </div>
+
+
+		    <div class="abc">
+		      	<img class="demo popupcursor" src="images/main.png" style="height:50px" onclick="currentSlide(1)" alt="Main screen">
+		    </div>
+		    <div class="abc">
+		      	<img class="demo popupcursor" src="images/news.png" style="height:50px" onclick="currentSlide(2)" alt="News screen">
+		    </div>
+		    <div class="abc">
+		      	<img class="demo popupcursor" src="images/message.png" style="height:50px" onclick="currentSlide(3)" alt="Message screen for not registered or logged in users">
+		    </div>
+		    <div class="abc">
+		      	<img class="demo popupcursor" src="images/messageregistered.png" style="height:50px" onclick="currentSlide(4)" alt="Message screen for reistered and logged in users">
+		    </div>
+		    <div class="abc">
+		      	<img class="demo popupcursor" src="images/adminpanel.png" style="height:50px" onclick="currentSlide(4)" alt="Admin panel">
+		    </div>
+  		</div>
+	</div>
+	
+	<footer>
+		<div style="margin-bottom: 10px;">
+			<a href="https://www.facebook.com/gabriele.kvietinskaite" target="_blank"><img class="social" src="images/facebook.png"></a>
+			<a href="https://github.com/GabrieleKvietinskaite" target="_blank"><img class="social" src="images/github.png"></a>
+			<a href="https://www.instagram.com/gabrielleyz/" target="_blank"><img class="social" src="images/instagram.png"></a>
+			<a href="https://www.linkedin.com/in/gabriel%C4%97-kvietinskait%C4%97-820b30189/" target="_blank"><img class="social" src="images/linkedin.png"></a>
+		</div>
+		<div style="text-align: left; color: white; font-size: 10px;">GABRIELĖ KVIETINSKAITĖ©2019</div>
+	</footer>
+
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	(function($) {          
+	    $(document).ready(function(){                    
+	        $(window).scroll(function(){                          
+	            if ($(this).scrollTop() > 500) {
+	                $('.sidenav').fadeIn(500);
+	            } else {
+	                $('.sidenav').fadeOut(500);
+	            }
+	        });
+	    });
+	})(jQuery);
+	</script>
+
+
+
+	<script>
+	function openpopupModal() {
+	  document.getElementById("mypopupModal").style.display = "block";
+	}
+
+	function popupclosepopupModal() {
+	  document.getElementById("mypopupModal").style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var popupcaptionText = document.getElementById("popupcaption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  popupcaptionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
+</body>
+</html> 
